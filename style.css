@@ -1,0 +1,169 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  background: black;
+  color: #c0c0c0;
+  font-family: "Courier New", monospace;
+  max-width: 90vw;
+  margin: auto;
+  padding: 15px;
+}
+#madeBy::after {
+  content: "_";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* NAV */
+nav {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #555;
+}
+
+nav a,
+nav select {
+  background: black;
+  color: #c0c0c0;
+  border: 1px solid #555;
+  padding: 3px 8px;
+  margin-right: 5px;
+  font-family: inherit;
+}
+
+nav a:hover,
+nav select:hover {
+  background: #222;
+}
+
+/* HEADER */
+header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px dashed #555;
+  
+}
+
+header h1 {
+  font-size: 1.9rem;
+  color: #00ffff;
+}
+
+header img {
+  width: 90px;
+
+}
+
+main{
+    width: 70vw;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* SECTIONS */
+section {
+  width: 80vw;
+  
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #080808;
+  margin: auto;
+  margin-bottom: 20px;
+  
+ 
+}
+
+#rice-links{
+    background-image: url('assets/linux_mini_tux.png');
+   background-repeat: no-repeat;
+   background-position-y: bottom;
+   background-position-x: right;
+   background-size: 20%;
+}
+
+.forProgrammers{
+    background-image: url('assets/tux\ no\ pc.gif');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center ;
+}
+
+#communities{
+    background-image: url('assets/linux_penguin_catching_butterfly.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center ;
+}
+
+/* TITLES */
+.sectiontitle {
+  margin-bottom: 10px;
+  color: #ffff00;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* LINKS */
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a::before {
+  content: ">> ";
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* TEXT */
+p {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 30px;
+  padding: 10px;
+  border-top: 1px solid #555;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* ASCII vibe */
+section::before {
+  content: "----------------------------------------";
+  display: block;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+section::after {
+  content: "----------------------------------------";
+  display: block;
+  color: #444;
+  margin-top: 10px;
+}
